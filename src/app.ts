@@ -6,7 +6,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 config();
 const app = express();
-app.use(cors({ origin:" http://localhost:5173", credentials: true }));
+app.use(cors({ origin:" http://localhost:1000", credentials: true }));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(express.json());
 app.use(morgan("dev"));
